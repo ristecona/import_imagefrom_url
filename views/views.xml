@@ -1,0 +1,16 @@
+<odoo>
+  <data>
+   <record model="ir.ui.view" id="imgurl_product_template_form">
+      <field name="model">product.template</field>
+      <field name="name">product.template.productcatalogs</field>
+      <field name="inherit_id" ref="product.product_template_form_view" />
+      <field name="arch" type="xml">
+                <xpath expr="//field[@name='type']" position="before">
+                        
+                        <field name="url_image" />
+                  
+                </xpath>
+      </field>
+    </record>
+  </data>
+</odoo>
